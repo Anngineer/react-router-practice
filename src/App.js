@@ -6,20 +6,35 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React with Hash Router
-          </a>
-        </header>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <p>
+                  Edit <code>src/App.js</code> and save to reload.
+                </p>
+                <a
+                  className="App-link"
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hash Router Practice
+                </a>
+              </header>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <div>
+                <h1>About React Router Dom</h1>
+              </div>
+            }
+          />
+        </Routes>
       </div>
     </Router>
   );
