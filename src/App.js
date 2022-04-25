@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React with Browser Router
+            Learn React with Hash Router
           </a>
         </header>
       </div>
