@@ -1,11 +1,25 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
     <Router>
       <div className="App">
+        <div
+          id="nav"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            backgroundColor: "black",
+            color: "white",
+            padding: "1rem",
+          }}
+        >
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+        </div>
         <Routes>
           <Route
             path="/"
