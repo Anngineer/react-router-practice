@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -21,7 +21,7 @@ function App() {
           </a>
         </header>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
